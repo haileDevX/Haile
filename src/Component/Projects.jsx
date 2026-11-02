@@ -221,6 +221,45 @@ const projects = [
     tags: ["React", "Tailwind CSS", "Context API"]
   },
   {
+    id: 4,
+    image: project2,
+    title: "Netflix Clone",
+    type: "web",
+    description: "Streaming platform clone with movie database and responsive browsing UI.",
+    github: "https://github.com/haileDevX/netflix-by-react.git",
+    live: "https://netflix-by-react-1he4.vercel.app/",
+    deepDescription: "Netflix-inspired streaming front end powered by TMDB for catalog data, category rows, search, and detail views, with Firebase authentication for sign-in flows.",
+    features: ["TMDB Movie & Series Catalog", "Category Rows & Search", "Title Detail Pages", "Firebase Authentication"],
+    architecture: { frontend: "React, Tailwind CSS", state: "React Context", backend: "TMDB API, Firebase Auth" },
+    tags: ["React", "TMDB API", "Firebase Auth"]
+  },
+  {
+    id: 3,
+    image: project3,
+    title: "Apple Clone",
+    type: "web",
+    description: "Apple product showcase website replica with polished marketing layouts.",
+    github: "https://github.com/haileDevX/Apple.git",
+    live: "https://leomain.netlify.app/",
+    deepDescription: "High-fidelity Apple-style marketing site with product hero sections, scroll-driven animations, and responsive device showcases built for performance and visual polish.",
+    features: ["Product Hero Sections", "Scroll-driven Animations", "Responsive Device Showcases", "Optimized Asset Loading"],
+    architecture: { frontend: "React, Tailwind CSS, GSAP", state: "React State", backend: "Static Client Application" },
+    tags: ["React", "GSAP", "Tailwind CSS"]
+  },
+  {
+    id: 6,
+    image: project6,
+    title: "Hotel Website Template",
+    type: "web",
+    description: "Booking-focused landing site template for luxury hospitality brands.",
+    github: "https://github.com/haileDevX/forhotel.git",
+    live: "https://forhotelcom.netlify.app/",
+    deepDescription: "Hospitality marketing and booking template with room highlights, amenity sections, gallery layouts, and contact/reservation call-to-action flows for hotel operators.",
+    features: ["Room & Amenity Showcases", "Photo Gallery Layouts", "Reservation CTAs", "Mobile-first Responsive Design"],
+    architecture: { frontend: "React, Styled Components", state: "Context API", backend: "Static Client Application" },
+    tags: ["React", "Styled Components", "Context API"]
+  },
+  {
     id: 5,
     image: project5,
     title: "Fitclub",
@@ -235,8 +274,14 @@ const projects = [
   }
 ];
 
+const FILTER_TABS = [
+  { id: "all", label: "All" },
+  { id: "app", label: "Mobile Apps" },
+  { id: "web", label: "Web Platforms" },
+];
+
 function Projects({ onRobotInspect }) {
-  const [filter, setFilter] = useState("app");
+  const [filter, setFilter] = useState("all");
   const [hoveredProject, setHoveredProject] = useState(null);
 
   const appProjects = projects.filter((p) => p.type === "app");
@@ -258,26 +303,26 @@ function Projects({ onRobotInspect }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight flex items-center gap-3">
-              Featured Projects
+              Projects
             </h2>
             <p className="text-base text-zinc-400 mt-2 max-w-2xl tracking-tight">
-              Production mobile applications and full-stack web platforms engineered from end to end.
+              Browse all mobile applications and web platforms, or filter by category.
             </p>
           </div>
 
           {/* Filter Tabs */}
           <div className="flex gap-2 flex-wrap">
-            {["app", "web"].map((f) => (
+            {FILTER_TABS.map(({ id, label }) => (
               <button
-                key={f}
-                onClick={() => setFilter(f)}
+                key={id}
+                onClick={() => setFilter(id)}
                 className={`px-4 py-2 rounded-lg text-xs font-medium transition-colors tracking-tight cursor-pointer ${
-                  filter === f
+                  filter === id
                     ? "bg-white text-zinc-950 font-semibold shadow-sm"
                     : "bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white hover:bg-zinc-800"
                 }`}
               >
-                {f === "app" ? "Mobile Apps" : "Web Platforms"}
+                {label}
               </button>
             ))}
           </div>
