@@ -12,7 +12,7 @@ const socials = [
   { icon: faFacebook, url: "https://www.facebook.com/profile.php?id=100072563070175" },
   { icon: faInstagram, url: "https://www.instagram.com/haile_adey?igsh=MXBkMHNxcjZ5ZWczMQ==" },
   { icon: faLinkedin, url: "https://www.linkedin.com/in/hailemichael-eshetu-6920b2372/" },
-  { icon: faGithub, url: "https://github.com/hailegithubaccount" },
+  { icon: faGithub, url: "https://github.com/haileDevX" },
   { icon: faTelegram, url: "https://t.me/Haile6" },
 ];
 
@@ -371,7 +371,7 @@ function Banner({ onRobotInspect }) {
 
                     {/* GitHub App */}
                     <a 
-                      href="https://github.com/hailegithubaccount" 
+                      href="https://github.com/haileDevX" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       title="GitHub Profile"

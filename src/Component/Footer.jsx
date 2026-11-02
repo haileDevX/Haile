@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const socials = [
-  { icon: faGithub, url: "https://github.com/hailegithubaccount", label: "GitHub" },
+  { icon: faGithub, url: "https://github.com/haileDevX", label: "GitHub" },
   { icon: faLinkedin, url: "https://www.linkedin.com/in/hailemichael-eshetu-6920b2372/", label: "LinkedIn" },
   { icon: faTelegram, url: "https://t.me/Haile6", label: "Telegram" },
   { icon: faInstagram, url: "https://www.instagram.com/haile_adey?igsh=MXBkMHNxcjZ5ZWczMQ==", label: "Instagram" },
