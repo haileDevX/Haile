@@ -5,11 +5,8 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import project1 from "../assets/azmeraTrade.jpg";
-import project2 from "../assets/Netflix.png";
-import project3 from "../assets/apple.webp";
 import project4 from "../assets/studynest.jpg";
 import project5 from "../assets/fitclub.png";
-import project6 from "../assets/forHotel.png";
 import project7 from "../assets/studynestdashboard.png";
 import project8 from "../assets/image.png";
 import project9 from "../assets/DashenMerchant.jpg";
@@ -219,45 +216,6 @@ const projects = [
     features: ["Cultural & Modern Category Filtering", "Fast Search & Sorting", "Interactive Order Summary", "Optimized Web Vitals"],
     architecture: { frontend: "React, Tailwind CSS", state: "Context API", backend: "REST Services" },
     tags: ["React", "Tailwind CSS", "Context API"]
-  },
-  {
-    id: 4,
-    image: project2,
-    title: "Netflix Clone",
-    type: "web",
-    description: "Streaming platform clone with movie database and responsive browsing UI.",
-    github: "https://github.com/haileDevX/netflix-by-react.git",
-    live: "https://netflix-by-react-1he4.vercel.app/",
-    deepDescription: "Netflix-inspired streaming front end powered by TMDB for catalog data, category rows, search, and detail views, with Firebase authentication for sign-in flows.",
-    features: ["TMDB Movie & Series Catalog", "Category Rows & Search", "Title Detail Pages", "Firebase Authentication"],
-    architecture: { frontend: "React, Tailwind CSS", state: "React Context", backend: "TMDB API, Firebase Auth" },
-    tags: ["React", "TMDB API", "Firebase Auth"]
-  },
-  {
-    id: 3,
-    image: project3,
-    title: "Apple Clone",
-    type: "web",
-    description: "Apple product showcase website replica with polished marketing layouts.",
-    github: "https://github.com/haileDevX/Apple.git",
-    live: "https://leomain.netlify.app/",
-    deepDescription: "High-fidelity Apple-style marketing site with product hero sections, scroll-driven animations, and responsive device showcases built for performance and visual polish.",
-    features: ["Product Hero Sections", "Scroll-driven Animations", "Responsive Device Showcases", "Optimized Asset Loading"],
-    architecture: { frontend: "React, Tailwind CSS, GSAP", state: "React State", backend: "Static Client Application" },
-    tags: ["React", "GSAP", "Tailwind CSS"]
-  },
-  {
-    id: 6,
-    image: project6,
-    title: "Hotel Website Template",
-    type: "web",
-    description: "Booking-focused landing site template for luxury hospitality brands.",
-    github: "https://github.com/haileDevX/forhotel.git",
-    live: "https://forhotelcom.netlify.app/",
-    deepDescription: "Hospitality marketing and booking template with room highlights, amenity sections, gallery layouts, and contact/reservation call-to-action flows for hotel operators.",
-    features: ["Room & Amenity Showcases", "Photo Gallery Layouts", "Reservation CTAs", "Mobile-first Responsive Design"],
-    architecture: { frontend: "React, Styled Components", state: "Context API", backend: "Static Client Application" },
-    tags: ["React", "Styled Components", "Context API"]
   },
   {
     id: 5,
